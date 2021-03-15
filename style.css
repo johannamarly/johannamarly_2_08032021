@@ -1,0 +1,54 @@
+
+nav img
+{
+    display: flex;
+    width: 90px;
+    height: 40px;
+}
+ nav a {
+    font-size: 1em;
+    padding-bottom: 1px;
+    text-decoration:none;
+    
+ }
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-left: 70%;
+
+div li {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+#filtre {
+
+    list-style-type: none;
+
+}
+
+
+nav 
+
+    background-color: #F2F2F2;
+    
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type:none;
+    float:left;
+  }
+
+  #lespluspopulaires {
+      display: flex;
+      padding-bottom: 2px;
+      width: 10%;
+      height: 10%;
+
+  }
