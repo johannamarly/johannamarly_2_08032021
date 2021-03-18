@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <body>
+      
           <meta charset="utf-8"/>
           <link rel="stylesheet" href="style.css"/>
+          <script src="https://kit.fontawesome.com/48468fe365.js" crossorigin="anonymous"></script>
+          
+          
 
-<title>reservia</title>
+                <title>reservia</title>
+      </head>
+      
+      <body>
 
-
-  <nav>
-      <img src="Projet 2 - Reservia 2 /Reservia@3x.png" alt="logo reservia" />
-      </nav>
-      <select>recherche<option>Marseille, France</option></select>
+<nav>
+      <img src="images/Reservia@3x.png" alt="logo reservia" />
 </nav>
 
+<nav id="recherche">
 
-<div id="filtre">
+        <form><div><input type="search" id="maRecherche" name="q"><button>Rechercher</button></div></form>
 
-        <ul>
-                        <li>filtres</li>
-                        <li>économique</li>
-                        <li>famillial</li>
-                        <li>Romantique</li>
-                        <li>Animaux autorisés</li>
-        </ul>
+</nav>
+
+<h3><strong>Trouvez votre herbergement pour des vacances de rêve</strong></h3>
+<p><small>En plein centre ville ou en pleine nature </small></p><br>
+
+<div id="filtres_conteneur"> 
+     <ul id="filtres">               
+            <p><strong>filtres</strong></p>            
+                        <li><i class="fas fa-money-bill-wave"></i><strong>Économique</strong</li>
+                        <li><i class="fas fa-child"></i><strong>famillial</strong></li>
+                        <li><i class="fas fa-heart"></i><strong>Romantique</strong></li>
+                        <li><i class="fas fa-dog"></i><strong>Animaux autorisés</strong></li>
+    </ul> 
 </div>
 
 <nav>
@@ -36,69 +46,100 @@
 </nav>
 
 
-<h3><strong>Trouvez votre herbergement pour des vacances de rêve</strong></h3>
-<p><small>En plein centre ville ou en pleine nature </small></p>
+
+<p><i class="fas fa-info"></i><small>Plus de 500 logements sont disponible dans cette ville</small></p>
   
-</head>
+</herder>
 
 
-<section>
-      <h4><strong>Hébergement à Marseille</strong></h4><br>
+<h4><strong>Hébergement à Marseille</strong></h4>
 
-      <img src="Projet 2 - Reservia 2 /marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"/>
-        <p>Auberge la cannebière<br>
-          <small>nuit à partir de <strong>25€</strong></small></p>
-</section>
+<nav id="hebergement_containeur">
 
-<section>
-    <img src="Projet 2 - Reservia 2 /fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hôtel du port"/>
-      <p>Hotel du port<br>
-        <small>nuit a partir de <strong>52€</strong></small></p>
-</section>
+    
+<section >
+             
+                <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"/>
+                    <p id="description_1">
+                        <strong>Auberge la cannebière<br></strong>
+                            <small>nuit à partir de <strong>25€</strong></small></p>
+    </section>
 
-<section>
-    <img src="Projet 2 - Reservia 2 /reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel les mouettes"/>
-      <p>hotel les mouettes<br>
-        <small>nuit à partir de <strong>75€</strong></small></p>
-</section>
+    <section>
 
-<section>   
-      <img src="Projet 2 - Reservia 2 /annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hôtel de la mer"/>
-        <p>hotel de la mer<br>
-          <small>nuit à partir de <strong>46€</strong></small></p>
-</section>
+                 <img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hôtel du port"/>
+                    <p id="description_2">
+                        <strong>Hotel du port</strong><br>
+                            <small>nuit a partir de <strong>52€</strong></small></p>
+                     
+    </section>
 
-<section>
-    <img src="Projet 2 - Reservia 2 /nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier"/> 
-      <p>Auberge du panier<br>
-        <small>nuit à partir de <strong>23€</strong></small></p> 
-</section>
+    <section>
 
-<section>
-  <img src="Projet 2 - Reservia 2 /febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hôtel chez Amina"/>
-    <p>Hôtel de chez Amina<br>
-      <small>Nuit à partir de <strong>93€</strong></small></p> 
-</section>
+                 <img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel les mouettes"/>
+                        <p id="description_3">
+                            <trong>hotel les mouettes</strong><br>
+                                <small>nuit à partir de <strong>75€</strong></small></p>
 
-<div id="lespluspopulaires"> 
+    </section>
+    
+
+    <section> 
+
+                <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hôtel de la mer"/>
+                    <p id="description_4">
+                        <strong>hotel de la mer</strong><br>
+                            <small>nuit à partir de <strong>46€</strong></small></p>
+
+    </section>
+
+    <section>
+
+                <img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier"/> 
+                     <p id="description_5">
+                         <strong>Auberge du panier</strong><br>
+                            <small>nuit à partir de <strong>23€</strong></small></p> 
+
+    </section>
+
+    <section>
+
+                <img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hôtel chez Amina"/>
+                    <p id="description_6">
+                        <strong>Hôtel de chez Amina</strong><br>
+                            <small>Nuit à partir de <strong>93€</strong></small></p> 
+
+    </section>
+
+</nav>
+
+
+
+<div id="les_plus_populaires">
+
     <h4><strong>Les plus populaires</strong></h4><br>
 
-      <img src="Projet 2 - Reservia 2 /emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil matin"/>
-        <p>Hôtel le soleil du matin<br>
-          <small>Nuit à partir de <strong>128€</strong></small></p>
+            <img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil matin"/>
+                <p>Hôtel le soleil du matin<br>
+                    <small>Nuit à partir de <strong>128€</strong></small></p>
 
-      <img src="Projet 2 - Reservia 2 /aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambre d'hôtes"/>
-          <p>Au coeur de l'eau Chambre d'Hotes<br>
-          <small>Nuit a partir de <strong>71€</strong></small></p>
+                <img src="images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambre d'hôtes"/>
+            <p>Au coeur de l'eau Chambre d'Hotes<br>
+        <small>Nuit a partir de <strong>71€</strong></small></p>
 
-      <img src="Projet 2 - Reservia 2 /febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel tout bleu et tout blanc"/>
-          <p>Hôtel tout bleu et blanc<br>
-          <small>Nuit à parti de <strong>68€</strong></small></p>
+            <img src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel tout bleu et tout blanc"/>
+                <p>Hôtel tout bleu et blanc<br>
+                    <small>Nuit à parti de <strong>68€</strong></small></p>
 </div>
-   
+
+</nav>
+
+
+
+
   <!--footer//-->
 
-  <p>
+<p>
   
 
 <ul>
@@ -107,18 +148,18 @@
               <li><small>fonctionnent du site </small></li>
               <li><small>condition générales de vente </small></li>
               <li><small>Données et confidentialité</small></li>
-      </ul>
+      
 
  
-      <ul>
+      
            <p><small><strong>Nos hébergements</strong></small></p>
 <br>
             <li><small>Chartre de qualité</small></li>
             <li><small>Soumettre votre hôtel</small></li>
-      </ul>
+    
 
 
-        <ul>
+        
              <p><small><strong>Assitance</strong></small></p>
 <br> 
              <li><small>Centre d'aide</small></li>
@@ -126,7 +167,6 @@
         </ul>
 
      </p>
-           
-
+    </div>
 </body>
 </html>
