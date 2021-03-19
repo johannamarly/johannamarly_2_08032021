@@ -70,20 +70,95 @@ nav a {
     top: 1px;
     
 }
-
-
-    
-    
-  #hebergement_containeur{
-      display: flex;
-  }  
-
-      
-
+div i {
+    color: #DEEBFF;
     
 }
-p + ul{
-list-style-type: none;
+#hebergement_containeur{
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#third {
+    width: 33%;
+}
+
+img {
+    width: 100%;
+    position: relative;
+}
+
+
+#hebergement_containeur i{
+    
+    color: #0065ff;
+    border: 0px;
+}
+
+<!--lespluspopulaires--> 
+
+#image3 + p{
+    display: flex
+    
+}
+
+
+#les_plus_populaires{
+    width: 200px;
+    height: 10;
+}
+#les_plus_populaires i{
+    color: #0065ff;
+    border: 0px;
+    width: 1px;
+}
+
+
+
+
+<!--activités_marseille-->
+
+#Activités_marseille{
+    
+    display: inline;
+}
+
+#image_1{
+
+        width: 10%;
+        height: 50%;
+        border-radius: 10px;
+        background-color: white;
+        border-radius: 10% ;
+        box-shadow: 3px 3px 3px silver;
+        
+    }
+
+#image{
+        width: 10%;
+        height: 10%;
+        border-radius: 10px;
+        background-color: white;
+        border-radius: 10% ;
+        box-shadow: 3px 3px 3px silver;
+}
+   
+    
+<!--footer-->
+
+ li {
+     
+    list-style-type: none;
+
+}
+
+ul p{
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
 
 
 
