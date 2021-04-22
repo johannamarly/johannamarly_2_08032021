@@ -1,0 +1,491 @@
+
+@font-face{
+    font-family: raleway sans-serif;
+    src: url(Raleway-VariableFont_wght.ttf);
+}
+
+
+.grid-container-navbar {
+    display: grid;
+    grid-template-columns: 1.8fr 0.8fr 0.7fr 0.7fr;
+    grid-template-rows: 0.1fr 2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". line . ."
+      "logo-reservia hebergement activites inscrire";
+  }
+  
+  .logo-reservia img { 
+      grid-area: logo-reservia;
+    width: 100px; }
+  
+  .hebergement { 
+      
+    grid-area: hebergement;
+     margin-top: -20%;
+     margin-left: 18px ;
+     text-decoration: none;
+    
+ }
+
+ .line{
+    grid-area: line;
+     border-top: solid #0065fc;
+     width: 70%;
+     border-width: 2Px;
+ }
+     
+  
+  .activites { 
+      
+    grid-area: activites;
+    margin-top: -20%;
+    margin-left: 18px }
+  
+  .inscrire { 
+      
+    grid-area: inscrire;
+    margin-top: -20%;
+    margin-left: 18px
+  }
+  @media screen and (max-width: 768px){
+
+    .grid-container-navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 0.6fr 0fr ;
+        gap: 0px 0px;
+        grid-template-areas:
+          "logo-reservia inscrire"
+          "hebergement activites"
+          "line .";
+      }
+      
+      .logo-reservia { 
+          grid-area: logo-reservia; 
+        margin-top: 15%;
+        font-size: xx-large;
+    }
+      
+      .inscrire { grid-area: inscrire;
+        margin: 20% 14% 17% 40% ;
+        font-size: x-large;
+        
+        }
+      
+      .hebergement { grid-area: hebergement;
+        margin-top: 15%;
+        margin-left: 14%;
+        font-size: x-large;
+     }
+      
+      .activites { grid-area: activites;
+        margin-top: 15%;
+        margin-left: 40px;
+        font-size: x-large }
+      
+      .line { grid-area: line;
+         width: 180px; }
+
+      .activites a {
+        color: black
+}
+  }
+.searchForm{
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
+}
+.searchFormWrapicon{
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+
+}
+.searchFormWrapiconIcon{
+    margin-left: 0.1rem;
+}
+.searchFormSearchImput{
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: relaway,sans-serif;
+}
+.searchFormSubmitInput{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    font-family: relaway sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+#filtres {
+
+    list-style-type: none;
+}
+.filtres{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.filter-element{
+    border: solid silver 2px;
+    border-radius: 2em;
+    max-width: 250px;
+    margin-right: 16px ;
+   
+}
+.filter-element-containeur{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filter-element-icone-containeur{
+    width: 3rem;
+    background-color:#DEEBFF ;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.filter-element-icone-containeur i{
+    color: #0065FC;
+    position: relative;
+    top: 25%
+}
+
+.filter-element-texte{
+    margin: 0px 8px;
+}
+
+
+p i {
+
+    color: #0065ff;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: rgb(218, 216, 216);
+    padding: 1px 6px 1px 6px;
+    margin-right: 0.5%;
+    
+}
+
+
+.hebergement-activités-inscription-containeur{
+
+    display: flex;
+    position: relative;
+    bottom: 10rem;
+    top: -45px;
+    margin-left: 40%;
+    padding: 20px 10px 10px 10px;
+   
+}
+.hebergement-titre{
+    margin-right: 50px;
+}
+.activités-titre{
+    margin-right: 50px;
+}
+div i {
+    color: #DEEBFF;
+    
+}
+
+.fas{
+    display:flex;
+    color: #0065ff;
+    border: 0px;
+    margin: 0% 0% 0% 0%;
+}
+.far {
+    color:silver;
+    border: 0px; 
+}
+.Marseille-containeur{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+#hebergement_containeur{
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    border-radius: 15px;
+    padding-top: 40px;
+    
+    
+}
+.Marseille-titre{
+
+    margin-left: 25px;
+    margin-bottom: -30px;
+    margin-top: -21px;
+    
+
+}
+.Marseille-titre h3{
+    font-size: medium;
+}
+
+.Marseille-content-containeur{
+    
+    
+    background-color: #f2f2f2;
+    padding-top: 30px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.Marseille-left-containeur{
+
+    width: 64%;
+}
+.les-plus-populaires-right-containeur{
+
+    width: 36%;
+}
+
+ img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+
+.third{
+     width: 31%;
+     margin-right: 2%;
+     margin-bottom: 16px;
+    
+}
+
+.hebergement-element-content{
+    border-radius: 30px 30px 30px 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow:3px 3px 3px rgb(196, 193, 193);
+    
+}
+.hebergement-image{
+    height: 7em;
+    object-fit: cover;
+}
+
+.AFP{
+    display: flex;
+    width: 98%;
+    padding-left: 10px;
+    padding-top: 1%;
+    border: solid #F2F2F2;
+    background-color: #F2F2F2;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 20px 20px;
+   
+}
+
+.les-plus-populaires-test h3{
+
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.les-plus-populaires-test span i{
+    color: black;
+    
+    
+
+   
+}
+.les-plus-populaires-test {
+    display:flex ;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-bottom: 2%;
+    padding-right: 1%;
+    
+    
+}
+
+.les-plus-populaires-test h3{
+    font-size: medium;
+}
+.img-pop{
+    width: 45%;
+    height: 93%;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    object-fit: cover;
+
+}
+.img-pop-soleil{
+    width: 50%;
+    height: 138%;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.img-pop .description{
+    display:flex ;
+    flex-wrap: wrap;
+    
+    
+}
+.pop{
+    display: flex;
+     margin-top: 12px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-left: 5px;
+
+
+    
+}
+span i{
+    color: black;
+    margin-left: 450px;
+    margin-top: 2px;
+}  
+.grid-container-activity-Marseille {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px 24px;
+    grid-template-areas:
+      "old-port pomegue calanques garde"
+      "old-port iles-frioul calanques longchamp";
+      
+      grid-template-rows: 30% 30% 0% 0% 0%;
+  }
+  .old-port { grid-area: old-port; }
+  .pomegue { grid-area: pomegue; }
+  .iles-frioul { grid-area: iles-frioul; }
+  .calanques { grid-area: calanques; }
+  .garde { grid-area: garde; }
+  .longchamp { grid-area: longchamp; }
+
+
+.grid-container-activity-Marseille-title{
+    padding: 2%;
+    font-size: large;
+} 
+.activity-Maseille-card{
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: #00000038 0px 0px 4px;
+}
+
+.activity-Maseille-card-image{
+    height: 90%;
+}
+
+.activity-Maseille-card-image-little{
+
+    height: 85%;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.activity-Marseille-card-title{
+    margin-left: 8px;
+}
+
+
+#footer {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+
+@media screen and (max-width: 768px){
+
+    .filter-element{
+        margin-bottom: 8px;
+    }
+    
+    .Marseille-containeur{
+        
+        flex-direction: column-reverse;
+       
+    }
+    .hebergement_containeur{
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    
+    .hebergement-element-containeur{
+        width: 100%;
+    }
+    
+    .Marseille-content-containeur{
+        flex-direction: column;
+    }
+    .Activités_marseille {
+        flex-direction: column;
+        width: 100%;
+        
+    
+    }
+    .grid-container-activity-Marseille {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px 0px;
+        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+        width: auto;
+    
+        
+        grid-template-areas:
+          "old-port"
+          "pomegue"
+          "iles-frioul"
+          "calanques"
+          "garde"
+          "longchamp";
+      }
+      .old-port { grid-area: old-port; }
+      .pomegue { grid-area: pomegue; }
+      .iles-frioul { grid-area: iles-frioul; }
+      .calanques { grid-area: calanques; }
+      .garde { grid-area: garde; }
+      .longchamp { grid-area: longchamp; }
+
+      .third{
+          flex-direction: column;
+      }
+
+    #footer{
+        flex-direction: column;
+        
+    }
+}
