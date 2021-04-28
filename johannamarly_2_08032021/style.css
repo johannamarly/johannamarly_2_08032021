@@ -8,7 +8,7 @@
 .grid-container-navbar {
     display: grid;
     grid-template-columns: 1.8fr 0.8fr 0.7fr 0.7fr;
-    grid-template-rows: 0.1fr 2fr;
+    grid-template-rows: 0.1fr ;
     gap: 0px 0px;
     grid-template-areas:
       ". line . ."
@@ -17,13 +17,13 @@
   
   .logo-reservia img { 
       grid-area: logo-reservia;
-    width: 100px; }
+    width: 185px; }
   
   .hebergement { 
       
     grid-area: hebergement;
-     margin-top: -20%;
-     margin-left: 18px ;
+     margin-top: -28%;
+     margin-left: 20% ;
      text-decoration: none;
     
  }
@@ -39,61 +39,20 @@
   .activites { 
       
     grid-area: activites;
-    margin-top: -20%;
+    margin-top: -31%;
     margin-left: 18px }
   
   .inscrire { 
       
     grid-area: inscrire;
-    margin-top: -20%;
+    margin-top: -31%;
     margin-left: 18px
   }
-  @media screen and (max-width: 768px){
+  
 
-    .grid-container-navbar {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.4fr 0.6fr 0fr ;
-        gap: 0px 0px;
-        grid-template-areas:
-          "logo-reservia inscrire"
-          "hebergement activites"
-          "line .";
-      }
-      
-      .logo-reservia { 
-          grid-area: logo-reservia; 
-        margin-top: 15%;
-        font-size: xx-large;
-    }
-      
-      .inscrire { grid-area: inscrire;
-        margin: 20% 14% 17% 40% ;
-        font-size: x-large;
-        
-        }
-      
-      .hebergement { grid-area: hebergement;
-        margin-top: 15%;
-        margin-left: 14%;
-        font-size: x-large;
-     }
-      
-      .activites { grid-area: activites;
-        margin-top: 15%;
-        margin-left: 40px;
-        font-size: x-large }
-      
-      .line { grid-area: line;
-         width: 180px; }
-
-      .activites a {
-        color: black
-}
-  }
+    
 .searchForm{
     display: inline-flex;
-    max-width: 100%;
     overflow: auto;
 }
 .searchFormWrapicon{
@@ -129,7 +88,10 @@
     font-size: 1rem;
     cursor: pointer;
 }
-
+.loupe{
+    display: none !important;
+    color: white !important;
+}
 
 #filtres {
 
@@ -152,6 +114,12 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.filter-element :hover{
+    background-color: rgb(196, 196, 235);
+    border-radius: 20px;
+    font-style: italic;
+    
 }
 
 .filter-element-icone-containeur{
@@ -185,7 +153,12 @@ p i {
     
 }
 
-
+.info2 i{
+    border: solid #F2F2F2;
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 6px 10px 6px 10px;
+    margin-right: 1%;}
 .hebergement-activités-inscription-containeur{
 
     display: flex;
@@ -208,7 +181,7 @@ div i {
 }
 
 .fas{
-    display:flex;
+    
     color: #0065ff;
     border: 0px;
     margin: 0% 0% 0% 0%;
@@ -230,7 +203,7 @@ div i {
     flex-wrap: wrap;
     align-content: space-around;
     border-radius: 15px;
-    padding-top: 40px;
+    padding-top: 25px;
     
     
 }
@@ -244,14 +217,16 @@ div i {
 }
 .Marseille-titre h3{
     font-size: medium;
+    margin-bottom: 5%;
 }
 
 .Marseille-content-containeur{
     
     
     background-color: #f2f2f2;
-    padding-top: 30px;
-    border-radius: 20px 20px 0px 0px;
+    padding-top: 60px;
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 4%;
 
 }
 .Marseille-left-containeur{
@@ -272,9 +247,14 @@ div i {
 
 
 .third{
-     width: 31%;
-     margin-right: 2%;
-     margin-bottom: 16px;
+     width: 28%;
+     margin-right: 5%;
+     margin-bottom: 5%;
+    
+}
+.third :hover{
+    background-color: rgb(196, 196, 235);
+    font-style:italic ;
     
 }
 
@@ -294,10 +274,10 @@ div i {
     display: flex;
     width: 98%;
     padding-left: 10px;
-    padding-top: 1%;
+    padding-top: 3%;
     border: solid #F2F2F2;
     background-color: #F2F2F2;
-    padding-bottom: 30px;
+    padding-bottom: 33px;
     border-radius: 0px 0px 20px 20px;
    
 }
@@ -322,7 +302,8 @@ div i {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding-bottom: 2%;
-    padding-right: 1%;
+    padding-right: 6%;
+    margin-left: 4%;
     
     
 }
@@ -359,10 +340,15 @@ div i {
     margin-bottom: 10px;
     background-color: #FFFFFF;
     border-radius: 20px;
-    margin-left: 5px;
+    margin-left: 7%;
+    margin-right: 7%;
 
+}
 
-    
+.pop :hover{
+
+    background-color: rgb(196, 196, 235);
+    font-style: italic;
 }
 span i{
     color: black;
@@ -370,15 +356,18 @@ span i{
     margin-top: 2px;
 }  
 .grid-container-activity-Marseille {
+    max-height: 100%;
+    
+    
+    height: 438px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 40% 50%;
     gap: 24px 24px;
     grid-template-areas:
       "old-port pomegue calanques garde"
       "old-port iles-frioul calanques longchamp";
       
-      grid-template-rows: 30% 30% 0% 0% 0%;
   }
   .old-port { grid-area: old-port; }
   .pomegue { grid-area: pomegue; }
@@ -412,7 +401,8 @@ img {
     object-fit: cover;
 }
 .activity-Marseille-card-title{
-    margin-left: 8px;
+    height: 10%;
+    margin: 1% 6px;
 }
 
 
@@ -425,21 +415,48 @@ img {
     
 }
 
+       
+   
+
 
 @media screen and (max-width: 768px){
 
+    .loupe{
+        display: flex !important;
+}
+    .searchFormSubmitInput span{
+        display: none;
+    }
     .filter-element{
         margin-bottom: 8px;
     }
-    
-    .Marseille-containeur{
+    .les-plus-populaires-test{
+        width: 114%;
+        margin-left: auto;
+        border-radius: 0px 0px 0px 0px;
         
+    }
+    .les-plus-populaires-right-containeur{
+        width: 85%;
+    }
+    .img-pop-soleil{
+        width: 95%;
+    }
+    .pop{
+        width: 95%;
+    }
+    .description{
+        width: 100%;
+    }
+    .Marseille-containeur{
+        width: 100%;
         flex-direction: column-reverse;
        
     }
+    
     .hebergement_containeur{
         flex-direction: column;
-        width: 100%;
+        width: 120%;
     
     }
     
@@ -448,7 +465,17 @@ img {
     }
     
     .Marseille-content-containeur{
+        width: 165%;
         flex-direction: column;
+        background-color: white;
+    }
+    .third{
+        width: 100%;
+    }
+    .AFP{
+        background-color: white;
+        border: none;
+        display: none;
     }
     .Activités_marseille {
         flex-direction: column;
@@ -480,12 +507,67 @@ img {
       .garde { grid-area: garde; }
       .longchamp { grid-area: longchamp; }
 
-      .third{
+    .third{
           flex-direction: column;
-      }
+    }
 
-    #footer{
+     #footer{
         flex-direction: column;
         
     }
+
+    .grid-container-navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 0.6fr 0fr ;
+        gap: 0px 0px;
+        grid-template-areas:
+          "logo-reservia inscrire"
+          "hebergement activites"
+          "line .";
+    }
+      
+    .logo-reservia { 
+          grid-area: logo-reservia; 
+        margin-top: 15%;
+        font-size: medium;
+    }
+      
+    .inscrire { grid-area: inscrire;
+        margin: 20% 14% 17% 40% ;
+        font-size: x-large;
+    }
+      
+    .hebergement { grid-area: hebergement;
+        margin-top: 15%;
+        margin-left: 14%;
+        font-size: x-large;
+     }
+      
+    .activites { grid-area: activites;
+        margin-top: 15%;
+        margin-left: 40px;
+        font-size: x-large 
+    }
+      
+    .line { grid-area: line;
+         width: 225px; }
+
+    .activites a {
+        color: black
+    }
+    .fas fa-search{
+    display: block;
+    }
+    .info h3{
+    font-size: xx-large;
+    }
+    .info h5{
+    font-size: x-large;
+    }
+    .info2{
+    font-size: x-large;
+    }
+
+
 }

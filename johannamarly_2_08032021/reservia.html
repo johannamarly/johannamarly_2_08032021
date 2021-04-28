@@ -3,10 +3,10 @@
 
 <head>
 
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8"/>
     <script src="https://kit.fontawesome.com/48468fe365.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -21,16 +21,16 @@
             <img src="images/logo/Reservia@3x.png" alt="logo reservia" />
         </div>
         <div class="hebergement">
-            <a href="hebergement.fr">hebergements</a>
+            <a href="#hebergement">hebergements</a>
         </div>
-        <div class="activites"><a href="activités.fr">activités</a></div>
+        <div class="activites"><a href="#activités">activités</a></div>
     
-    <div class="inscrire"><a href="inscrire.fr">s'inscrire</a></div>
+    <div class="inscrire"><a href="#inscrire">s'inscrire</a></div>
     <div class="line"></div>
     </div>
-    <h3><strong>Trouvez votre herbergement pour des vacances de rêve</strong></h3>
-    <p><small>En plein centre ville ou en pleine nature </small></p><br>
-
+    <div class="info"> <h3>Trouvez votre herbergement pour des vacances de rêve</h3>
+    <p><h5>En plein centre ville ou en pleine nature </h5></p><br>
+</div>
 
 
     <form class="searchForm">
@@ -38,7 +38,9 @@
             <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i>
         </span>
         <input class="searchFormSearchInput" type="search" placeholder="Marseille, France">
-        <button class="searchFormSubmitInput">
+        <button class="searchFormSubmitInput"> <i class="loupe fas fa-search "></i>
+        
+
             <span>Rechercher</span>
         </button>
     </form>
@@ -72,9 +74,9 @@
     </div>
 
 
-    <p><i class="fas fa-info"></i><small>Plus de 500 logements sont disponible dans cette ville</small></p>
+    <p class="info2"> <i class="fas fa-info"></i><small>Plus de 500 logements sont disponible dans cette ville</small></p>
 
-    <div class="Marseille-containeur">
+    <div class="Marseille-containeur" id="hebergement">
         <div class="Marseille-left-containeur">
             <div class="Marseille-content-containeur">
                 <div class="Marseille-titre">
@@ -234,7 +236,7 @@
     
     <div class="grid-container-activity-Marseille-title">
         
-            <h4>Activités à Marseille</h4>
+            <h4 id="activités"> Activités à Marseille</h4>
         
     </div>
     <div class="grid-container-activity-Marseille">
