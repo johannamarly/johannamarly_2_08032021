@@ -16,8 +16,9 @@
   }
   
   .logo-reservia img { 
-      grid-area: logo-reservia;
-    width: 185px; }
+    grid-area: logo-reservia;
+    width: 200px;
+ }
   
   .hebergement { 
       
@@ -48,8 +49,15 @@
     margin-top: -31%;
     margin-left: 18px
   }
-  
+.info h3{
 
+    font-weight: bold;
+    font-size: 20px;
+}  
+.info h5{
+    font-weight: normal;
+    font-size: 15px;
+}
     
 .searchForm{
     display: inline-flex;
@@ -93,14 +101,19 @@
     color: white !important;
 }
 
-#filtres {
+.filter-title{
 
-    list-style-type: none;
+    font-weight: bold;
 }
 .filtres{
     display: flex;
     flex-wrap: wrap;
 
+}
+.filter-title  .filtres{
+    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .filter-element{
@@ -135,6 +148,7 @@
     position: relative;
     top: 25%
 }
+
 
 .filter-element-texte{
     margin: 0px 8px;
@@ -209,14 +223,14 @@ div i {
 }
 .Marseille-titre{
 
-    margin-left: 25px;
+    margin-left: 10px;
     margin-bottom: -30px;
     margin-top: -21px;
     
 
 }
 .Marseille-titre h3{
-    font-size: medium;
+    font-size: 22px;
     margin-bottom: 5%;
 }
 
@@ -272,7 +286,7 @@ div i {
 
 .AFP{
     display: flex;
-    width: 98%;
+    width: auto;
     padding-left: 10px;
     padding-top: 3%;
     border: solid #F2F2F2;
@@ -280,6 +294,11 @@ div i {
     padding-bottom: 33px;
     border-radius: 0px 0px 20px 20px;
    
+}
+.AFP a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .les-plus-populaires-test h3{
@@ -416,22 +435,118 @@ img {
 }
 
        
-   
+@media all and (max-width: 1024px) {
 
 
-@media screen and (max-width: 768px){
+
+.Marseille-titre h3{
+    font-size: 30px;
+}
+
+
+.third{
+    
+    height: 270px;
+    font-size: 25Px;
+    
+}
+.hebergement-image{
+    height: 200px;
+}
+
+}
+
+
+@media all and (max-width: 768px){
+
+    .grid-container-navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 0.6fr 0fr ;
+        gap: 0px 0px;
+        grid-template-areas:
+          "logo-reservia inscrire"
+          "hebergement activites"
+          "line .";
+    }
+      
+    .logo-reservia img { 
+        grid-area: logo-reservia; 
+        margin-top: -6%;
+        width: 100%;
+        
+    }
+      
+    .inscrire { grid-area: inscrire;
+        margin: 20% 14% 17% 40% ;
+        font-size: x-large;
+    }
+
+    .inscrire a {
+        text-decoration: none;
+    }
+      
+    .hebergement { grid-area: hebergement;
+        margin-top: 15%;
+        margin-left: 14%;
+        font-size: x-large;
+        text-decoration: none;
+     }
+    .hebergement a{
+        text-decoration: none;  
+    
+    }
+    .activites { grid-area: activites;
+        margin-top: 22%;
+        margin-left: 40px;
+        font-size: x-large;
+        text-decoration: none;
+    }
+
+    .activites a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .line { grid-area: line;
+         width: 225px; 
+    }
+
+
+    .fas fa-search{
+        display: block;
+        }
+    
+    .info h3{
+        font-size: xx-large;
+        }
+    
+    .info h5{
+        font-size: x-large;
+        }
+    
+    .info2{
+        font-size: x-large;
+        }
+
 
     .loupe{
         display: flex !important;
 }
+    .searchForm{
+        width: 100%;
+    }
     .searchFormSubmitInput span{
         display: none;
     }
     .filter-element{
         margin-bottom: 8px;
     }
+
+
+
     .les-plus-populaires-test{
-        width: 114%;
+        width: 121%;
         margin-left: auto;
         border-radius: 0px 0px 0px 0px;
         
@@ -459,6 +574,9 @@ img {
         width: 120%;
     
     }
+    .Marseille-titre h3{
+        font-size: medium;
+    }
     
     .hebergement-element-containeur{
         width: 100%;
@@ -469,27 +587,44 @@ img {
         flex-direction: column;
         background-color: white;
     }
+    
+    .hebergement-image{
+        height: 116px;
+    }
     .third{
         width: 100%;
+        height: 175px;
+        margin-left: 2%;
+        font-size: 15px;
     }
-    .AFP{
+    .AFP {
         background-color: white;
         border: none;
-        display: none;
+        color: black;
+       
     }
+    .AFP a {
+        color: black;
+        text-decoration: none;
+    }
+
+
+
+
     .Activités_marseille {
         flex-direction: column;
         width: 100%;
-        
-    
     }
+
     .grid-container-activity-Marseille {
+        
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 20px 0px;
-        grid-template-rows: 16% 16% 16% 16% 16% 16%;
-        width: auto;
+        grid-template-rows: 30% 30% 30% 30% 30% 30%;
+        width: 100%;
+        margin-bottom: 132%;
+        
     
         
         grid-template-areas:
@@ -507,67 +642,30 @@ img {
       .garde { grid-area: garde; }
       .longchamp { grid-area: longchamp; }
 
+    img{
+        object-fit: cover;
+        height: 100px;
+    }
+    .grid-container-activity-Marseille-title{
+        margin-left: 7%;
+        font-size: 17px;
+    }
+    .activity-Maseille-card{
+        margin-left: 7%
+    }
+    .activity-Marseille-card-title{
+        margin-top: -2%;
+        margin-left: 4%;
+    }
     .third{
           flex-direction: column;
     }
 
-     #footer{
+    
+
+    #footer{
         flex-direction: column;
+        width: 110%;
         
     }
-
-    .grid-container-navbar {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.4fr 0.6fr 0fr ;
-        gap: 0px 0px;
-        grid-template-areas:
-          "logo-reservia inscrire"
-          "hebergement activites"
-          "line .";
-    }
-      
-    .logo-reservia { 
-          grid-area: logo-reservia; 
-        margin-top: 15%;
-        font-size: medium;
-    }
-      
-    .inscrire { grid-area: inscrire;
-        margin: 20% 14% 17% 40% ;
-        font-size: x-large;
-    }
-      
-    .hebergement { grid-area: hebergement;
-        margin-top: 15%;
-        margin-left: 14%;
-        font-size: x-large;
-     }
-      
-    .activites { grid-area: activites;
-        margin-top: 15%;
-        margin-left: 40px;
-        font-size: x-large 
-    }
-      
-    .line { grid-area: line;
-         width: 225px; }
-
-    .activites a {
-        color: black
-    }
-    .fas fa-search{
-    display: block;
-    }
-    .info h3{
-    font-size: xx-large;
-    }
-    .info h5{
-    font-size: x-large;
-    }
-    .info2{
-    font-size: x-large;
-    }
-
-
 }
