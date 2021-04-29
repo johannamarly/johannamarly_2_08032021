@@ -1,4 +1,14 @@
 
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 92vw;
+}
+
 @font-face{
     font-family: raleway sans-serif;
     src: url(Raleway-VariableFont_wght.ttf);
@@ -238,14 +248,6 @@ div i {
     width: 36%;
 }
 
- img {
-    width: 100%;
-    height: 60%;
-    border-radius: 10px 10px 0px 0px;
-    
-}
-
-
 .third{
      width: 28%;
      margin-right: 5%;
@@ -354,27 +356,52 @@ span i{
     color: black;
     margin-left: 450px;
     margin-top: 2px;
-}  
+}
+
 .grid-container-activity-Marseille {
-    max-height: 100%;
-    
-    
-    height: 438px;
+    height: 55vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 40% 50%;
-    gap: 24px 24px;
+    grid-template-rows: 100%;
+    gap: 0px 45px;
     grid-template-areas:
-      "old-port pomegue calanques garde"
-      "old-port iles-frioul calanques longchamp";
-      
+      "old-port pomegue-frioul calanques garde-longchamp";
   }
+  
   .old-port { grid-area: old-port; }
+  
+  .pomegue-frioul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 56% 33%;
+    gap: 10% 0px;
+    grid-template-areas:
+      "pomegue"
+      "frioul";
+    grid-area: pomegue-frioul;
+  }
+  
   .pomegue { grid-area: pomegue; }
-  .iles-frioul { grid-area: iles-frioul; }
+  
+  .frioul { grid-area: frioul; }
+  
   .calanques { grid-area: calanques; }
+  
+  .garde-longchamp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33% 56%;
+    gap: 10% 0px;
+    grid-template-areas:
+      "garde"
+      "longchamp";
+    grid-area: garde-longchamp;
+  }
+  
   .garde { grid-area: garde; }
+  
   .longchamp { grid-area: longchamp; }
+  
 
 
 .grid-container-activity-Marseille-title{
@@ -387,14 +414,22 @@ span i{
     box-shadow: #00000038 0px 0px 4px;
 }
 
-.activity-Maseille-card-image{
+.activity-Maseille-card-image-full {
     height: 90%;
 }
 
-.activity-Maseille-card-image-little{
-
+.activity-Maseille-card-image {
     height: 85%;
 }
+
+.activity-Maseille-card-image-little {
+    height: 75%;
+}
+
+.activity-Maseille-card-image, .activity-Maseille-card-image-little, .activity-Maseille-card-image-full, img {
+    border-radius: 20px 20px 0px 0px;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -402,17 +437,21 @@ img {
 }
 .activity-Marseille-card-title{
     height: 10%;
-    margin: 1% 6px;
+    margin: 2vh 0px 0px 2vw;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 
 #footer {
+    width: 100%;
     background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
-    
+    margin-top: 28px;
 }
 
        
@@ -480,33 +519,52 @@ img {
     .Activités_marseille {
         flex-direction: column;
         width: 100%;
-        
-    
     }
+
+    .activity-Maseille-card {
+        height: initial;
+    } 
+
+    .activity-Maseille-card-image, .activity-Maseille-card-image-little, .activity-Maseille-card-image-full {
+        height: 20vh;
+    }
+
+    .activity-Marseille-card-title {
+        height: 5vh;
+    } 
+
     .grid-container-activity-Marseille {
-        display: grid;
+        height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 20px 0px;
-        grid-template-rows: 16% 16% 16% 16% 16% 16%;
-        width: auto;
-    
-        
+        grid-template-rows: repeat(4, auto);
+        gap: 15px 0px;
         grid-template-areas:
           "old-port"
-          "pomegue"
-          "iles-frioul"
+          "pomegue-frioul"
           "calanques"
+          "garde-longchamp";
+      }
+      
+      .pomegue-frioul {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 15px 0px;
+        grid-template-areas:
+          "pomegue"
+          "frioul";
+        grid-area: pomegue-frioul;
+      }
+      
+      .garde-longchamp {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 15px 0px;
+        grid-template-areas:
           "garde"
           "longchamp";
+        grid-area: garde-longchamp;
       }
-      .old-port { grid-area: old-port; }
-      .pomegue { grid-area: pomegue; }
-      .iles-frioul { grid-area: iles-frioul; }
-      .calanques { grid-area: calanques; }
-      .garde { grid-area: garde; }
-      .longchamp { grid-area: longchamp; }
-
+      
     .third{
           flex-direction: column;
     }
