@@ -17,7 +17,9 @@
   
   .logo-reservia img { 
     grid-area: logo-reservia;
-    width: 200px;
+   max-width: 100%;
+   height: auto;
+   
  }
   
   .hebergement { 
