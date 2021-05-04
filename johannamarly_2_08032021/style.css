@@ -328,7 +328,8 @@ div i {
 }
 
 .les-plus-populaires-test h3{
-    font-size: medium;
+    font-size: 22px;
+    font-weight: bold;
 }
 .img-pop{
     width: 45%;
@@ -341,8 +342,8 @@ div i {
 
 }
 .img-pop-soleil{
-    width: 50%;
-    height: 138%;
+    width: 50% ;
+    height: 138% ;
     margin-left: 2%;
     margin-top: 3%;
 }
@@ -443,7 +444,6 @@ img {
     font-size: 30px;
 }
 
-
 .third{
     
     height: 270px;
@@ -453,7 +453,6 @@ img {
 .hebergement-image{
     height: 200px;
 }
-
 }
 
 
@@ -497,7 +496,7 @@ img {
     
     }
     .activites { grid-area: activites;
-        margin-top: 22%;
+        margin-top: 20%;
         margin-left: 40px;
         font-size: x-large;
         text-decoration: none;
@@ -553,6 +552,7 @@ img {
     }
     .les-plus-populaires-right-containeur{
         width: 85%;
+        background-color: #F2F2F2;
     }
     .img-pop-soleil{
         width: 95%;
