@@ -1,10 +1,4 @@
-@font-face{
-    font-family:'Raleway',sans-serif;
-    src: url(P2-Marly-Johanna/johannamarly_2_08032021/Raleway-VariableFont_wght.ttf,)format("ttf")
-    url(P2-Marly-Johanna/johannamarly_2_0803202/Raleway-Italic-VariableFont_wght.ttf)format("ttf")
-    url(P2-Marly-Johanna/johannamarly_2_08032021/Raleway-Bold.ttf)format("ttf")
 
-}
 .grid-container-navbar {
     display: grid;
     grid-template-columns: 1fr 0.2fr 0.2fr 0.2fr;
@@ -17,7 +11,7 @@
   
   .logo-reservia img { 
     grid-area: logo-reservia;
-   max-width: 10%;
+   max-width: 9%;
    height: auto;
    margin-left: 30px;
    margin-top: 30px;
@@ -25,7 +19,7 @@
   
   .hebergement { 
     font-family: 'Raleway'; 
-    font-size: 14px;
+    font-size: 13px;
     color: #0065FC;
     grid-area: hebergement;
      margin-top: -45px;
@@ -45,14 +39,14 @@
   
   .activites { 
     font-family: 'Raleway';
-    font-size: 14px;
+    font-size: 13px;
     grid-area: activites;
     margin-top: -45px;
     margin-left: 78px }
   
   .inscrire { 
     font-family: 'Raleway'; 
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     color:#0065FC;
     grid-area: inscrire;
@@ -71,7 +65,7 @@
 .info h5{
     font-family: 'Raleway';
     font-weight: normal;
-    font-size: 15px;
+    font-size: 13px;
     margin-top: -8px;
     margin-left: 30px;
     margin-bottom: 0%;
@@ -83,6 +77,7 @@
     overflow: auto;
     margin-top: -20px;
     margin-left: 30px;
+    height: 47px;
 }
 .searchFormWrapicon{
     background-color: #F2F2F2;
@@ -124,6 +119,10 @@
     font-family: 'Raleway';
     font-size: 1rem;
     cursor: pointer;
+}
+.searchFormSearchInput::placeholder {
+    font-weight: bold;
+    color: black;
 }
 .loupe{
     display: none !important;
@@ -190,15 +189,16 @@
 
 .info2 i{
     border: solid #F2F2F2;
+    font-size: 10px;
     border-width: 2px;
     border-radius: 20px;
-    padding: 8px 13px 8px 13px;
+    padding: 7px 10px 7px 10px;
     margin-right: 1%;
     margin-left: 30px;
     
 }
 .info2{
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'Raleway';
 }
 .hebergement-activités-inscription-containeur{
@@ -226,7 +226,8 @@
     border: none;
 }
 .far {
-    color: #F2F2F2;
+    
+    color: silver;
     
 
 }
@@ -244,6 +245,7 @@
     align-content: space-around;
     border-radius: 15px;
     padding-top: 25px;
+    margin-right: -41px;
     
     
 }
@@ -268,7 +270,7 @@
     background-color: #f2f2f2;
     padding-top: 60px;
     border-radius: 20px 20px 20px 20px;
-    padding-left: 9%;
+    padding-left: 5%;
     margin-left: 30px;
     padding-right: 0%;
 
@@ -291,15 +293,19 @@
 
 
 .third{
+    font-family: 'Raleway';
      width: 26%;
-     margin-right: 5%;
-     margin-bottom: 5%;
+     margin-right: 6%;
+     margin-bottom: 3%;
     
 }
 .third :hover{
     background-color: rgb(196, 196, 235);
     font-style:italic ;
     
+}
+.third i{
+    font-size: 11px;
 }
 .description{
     margin-left: 2px;
@@ -319,6 +325,7 @@
 .AFP{
     display: flex;
     width: auto;
+    font-family: 'Raleway';
     padding-left: 10px;
     padding-top: -1%;
     border: solid #F2F2F2;
@@ -350,10 +357,10 @@
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding-bottom: 1%;
+    padding-bottom: 4%;
     padding-right: 1%;
     margin-left: 29px;
-    margin-right: 40px;
+    margin-right: 30px;
     
     
 }
@@ -369,7 +376,7 @@
     margin-left: 195px;
 }
 .img-pop{
-    width: 45%;
+    width: 35%;
     height: 89%;
     border-radius: 10px 0px 0px 10px;
     margin-top: 7px;
@@ -382,6 +389,7 @@
 
 
 .pop{
+    font-family: 'Raleway';
     display: flex;
      margin-top: 12px;
     margin-bottom: 10px;
@@ -389,8 +397,24 @@
     border-radius: 10px;
     margin-left: 7%;
     margin-right: 7%;
-    height: 136px;
+    height: 121px;
 
+}
+.pop-coeur{
+    font-family: 'Raleway';
+    display: flex;
+     margin-top: 12px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-left: 7%;
+    margin-right: 7%;
+    height: 121px;
+}
+.pop-coeur i{
+
+    margin-top: 20px;
+    font-size: 11px;
 }
 
 .pop :hover{
@@ -401,6 +425,7 @@
 .pop i{
 
     margin: 42px -2px 0px 5px;
+    font-size: 11px;
 }
 span i{
     color: black;
@@ -412,14 +437,16 @@ span i{
     height: 438px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 40% 50%;
-    gap: 24px 24px;
+    grid-template-rows: 40% 43%;
+    gap: 34px 50px;
     grid-template-areas:
       "old-port pomegue calanques garde"
       "old-port iles-frioul calanques longchamp";
     margin-top: -34px;
     margin-left: 30px;
-  }
+    margin-right: 30px;
+    font-family: 'Raleway';
+}
   .old-port { grid-area: old-port; }
   .pomegue { grid-area: pomegue; }
   .iles-frioul { grid-area: iles-frioul; }
@@ -455,11 +482,20 @@ img {
 }
 .activity-Marseille-card-title{
     height: 10%;
-    margin: 1% 6px;
+    margin: 8px 8px;
+    padding-top: 3px;
+    font-size: 15px;
+}
+.activity-Marseille-card-title-little{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 15px;
 }
 
 
 #footer {
+    font-family: 'Raleway';
+    font-size: 18px;
     background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
@@ -469,24 +505,45 @@ img {
     padding-top: 15px;
     
 }
-
-       
+#footer p{
+    margin-right: 288px;
+}
+ 
 @media all and (max-width: 1024px) {
+.logo-reservia{
+    width: 160%;
+}
+.les-plus-populaires-test{
+    width: 150%;
+    margin-left: 63%;
+    margin-bottom: 10%;
+}
 
-
-
+.Marseille-containeur{
+    flex-direction: column-reverse;
+}
 .Marseille-titre h3{
     font-size: 30px;
+}
+#hebergement_containeur{
+    width: 105%;
+}
+.Marseille-content-containeur{
+    width: 143%;
 }
 
 .third{
     
-    height: 270px;
-    font-size: 25Px;
+    height: 277px;
+    font-size: 18Px;
     
 }
 .hebergement-image{
     height: 200px;
+}
+#footer{
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 }
 
@@ -506,13 +563,13 @@ img {
       
     .logo-reservia img { 
         grid-area: logo-reservia; 
-        margin-top: 14%;
-        min-width: 60%;
+        margin-top: 9%;
+        min-width: 25%;
         
     }
       
     .inscrire { grid-area: inscrire;
-        margin: 21% 0% 17% 68% ;
+        margin: 21% 0% 17% 47% ;
         font-size: 20px;
     }
 
@@ -562,7 +619,11 @@ img {
     
     .info2{
         font-size: x-large;
+        
         }
+    .info2 i{
+        margin: 1%;
+    }
 
 
     .loupe{
@@ -581,20 +642,23 @@ img {
 
 
     .les-plus-populaires-test{
-        width: 140%;
-        margin-left: auto;
+        width: 130%;
+        margin-left: 1%;
         border-radius: 0px 0px 0px 0px;
         
     }
     .les-plus-populaires-right-containeur{
         width: 85%;
-        background-color: #F2F2F2;
+        
     }
     .img-pop-soleil{
         width: 95%;
     }
     .pop{
-        width: 85%;
+        width: 71%;
+    }
+    .pop-coeur{
+        width: 71%;
     }
     .description{
         width: 100%;
@@ -611,18 +675,21 @@ img {
     
     }
     .Marseille-titre h3{
-        font-size: medium;
+        font-size: 15px;
+        
     }
     
     .hebergement-element-containeur{
         width: 100%;
     }
     .hebergement-element-content{
-        margin-left: -9%;
+        margin-left: 1%;
+        width: 88%;
     }
     
     .Marseille-content-containeur{
-        width: 165%;
+        width: 140%;
+        margin-left: 1%;
         flex-direction: column;
         background-color: white;
     }
@@ -659,10 +726,9 @@ img {
         
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px 0px;
-        grid-template-rows: 30% 30% 30% 30% 30% 30%;
-        width: 100%;
-        margin-bottom: 132%;
+        gap: 30px 0%;
+        grid-template-rows: 14% 14% 14% 14% 14% 14%;
+        height: 988px;
         
     
         
@@ -683,7 +749,7 @@ img {
 
     img{
         object-fit: cover;
-        height: 100px;
+        
     }
     .grid-container-activity-Marseille-title{
         margin-left: 7%;
@@ -691,11 +757,14 @@ img {
         padding-bottom: 35px;
     }
     .activity-Maseille-card{
-        margin-left: 0%;
-        margin-right: -6%;
+        
+        margin-right: 1%;
+        margin-top: -3%;
+        padding-bottom: 2%;
+        width: 88%;
     }
     .activity-Marseille-card-title{
-        margin-top: -2%;
+        margin-top: 0%;
         margin-left: 4%;
     }
     .third{
@@ -706,7 +775,10 @@ img {
 
     #footer{
         flex-direction: column;
-        width: 110%;
+        width: 100vw;
         
     }
+    
+    
+    
 }
