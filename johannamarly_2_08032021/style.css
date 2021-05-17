@@ -201,7 +201,7 @@
     font-size: 13px;
     font-family: 'Raleway';
 }
-.hebergement-activités-inscription-containeur{
+.hebergement-activites-inscription-containeur{
 
     display: flex;
     position: relative;
@@ -214,7 +214,7 @@
 .hebergement-titre{
     margin-right: 50px;
 }
-.activités-titre{
+.activites-titre{
     margin-right: 50px;
 }
 
@@ -327,7 +327,6 @@
     width: auto;
     font-family: 'Raleway';
     padding-left: 10px;
-    padding-top: -1%;
     border: solid #F2F2F2;
     background-color: #F2F2F2;
     padding-bottom: 33px;
@@ -717,7 +716,7 @@ img {
 
 
 
-    .Activités_marseille {
+    .Activites_marseille {
         flex-direction: column;
         width: 100%;
     }
