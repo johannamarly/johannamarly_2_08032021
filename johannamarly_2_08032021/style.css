@@ -77,7 +77,7 @@
     overflow: auto;
     margin-top: -20px;
     margin-left: 30px;
-    height: 47px;
+   
 }
 .searchFormWrapicon{
     background-color: #F2F2F2;
@@ -506,8 +506,70 @@ img {
 }
 #footer p{
     margin-right: 288px;
+    display: flex;
+    flex-wrap: nowrap;
 }
- 
+
+.grid-container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
+    gap: 2px 50px;
+    grid-template-areas:
+      "a-propos hebergement assitance"
+      "fonctionnement chartre centre-aide"
+      "conditions soumettre contact"
+      "données soumettre contact";
+      flex: auto;
+      font-family: 'Raleway';
+      font-size: 15px;
+      margin-left: 45px;
+      background-color: #F2F2F2;
+      
+  }
+  
+  .a-propos { 
+    grid-area: a-propos; 
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+  
+  .fonctionnement { 
+      grid-area: fonctionnement;
+   
+    }
+  
+  .conditions { grid-area: conditions; }
+  
+  .données { grid-area: données; }
+  
+  .noshebergement { 
+      grid-area: hebergement;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 13px;
+ }
+  
+  .chartre { 
+      grid-area: chartre; }
+  
+  .soumettre { grid-area: soumettre; }
+  
+  .assitance { 
+      grid-area: assitance;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 13px;
+    }
+  
+  .centre-aide { grid-area: centre-aide; }
+  
+  .contact { grid-area: contact; }
+  
+ .footer{
+     background-color: #F2F2F2;
+ }
 @media all and (max-width: 1024px) {
 .logo-reservia{
     width: 160%;
@@ -542,7 +604,7 @@ img {
 }
 #footer{
     flex-direction: column;
-    flex-wrap: nowrap;
+    
 }
 }
 
@@ -662,6 +724,13 @@ img {
     .description{
         width: 100%;
     }
+    .les-plus-populaires-test span .fas{
+        margin-left: 450px;
+
+    }
+    .les-plus-populaires-test h3{
+        margin-left: 51px;
+    }
     .Marseille-containeur{
         width: 100%;
         flex-direction: column-reverse;
@@ -670,7 +739,7 @@ img {
     
     .hebergement_containeur{
         flex-direction: column;
-        width: 120%;
+        width: 100%;
     
     }
     .Marseille-titre h3{
@@ -681,13 +750,10 @@ img {
     .hebergement-element-containeur{
         width: 100%;
     }
-    .hebergement-element-content{
-        margin-left: 1%;
-        width: 88%;
-    }
+    
     
     .Marseille-content-containeur{
-        width: 140%;
+        width: 175%;
         margin-left: 1%;
         flex-direction: column;
         background-color: white;
@@ -697,7 +763,7 @@ img {
         height: 116px;
     }
     .third{
-        width: 100%;
+        width: 75%;
         height: 175px;
         margin-left: 2%;
         font-size: 15px;
@@ -727,10 +793,9 @@ img {
         grid-template-columns: 1fr;
         gap: 30px 0%;
         grid-template-rows: 14% 14% 14% 14% 14% 14%;
-        height: 988px;
-        
-    
-        
+        height:1000px;
+        width: 100%;
+        margin-left: 6%;
         grid-template-areas:
           "old-port"
           "pomegue"
@@ -738,6 +803,7 @@ img {
           "calanques"
           "garde"
           "longchamp";
+          
       }
       .old-port { grid-area: old-port; }
       .pomegue { grid-area: pomegue; }
@@ -770,14 +836,131 @@ img {
           flex-direction: column;
     }
 
+    .grid-container-footer{
+        display: flex;
+        flex-direction: column;
+    }
+
     
 
-    #footer{
-        flex-direction: column;
-        width: 100vw;
+@media all and (max-width: 375px){
+    .info h5{
+        margin-bottom: 25px;
+    }
+    .searchForm{
+        height: 65px;
+        font-size: 20px;
+    }
+    .searchFormWrapicon{
+        width: 25px;
         
     }
     
-    
-    
+    .searchFormSearchInput{
+        width: 200px;
+        font-size: 18px;
+    }
+   .filtres{
+       display: flex;
+       flex-direction: column;
+       
+   }
+   
+   .filter-element-containeur{
+       justify-content: end;
+       height: 10%;
+   }
+   .filter-element{
+       width: 54%;
+       padding-left: 2px;
+   }
+   .filtre-famillial{
+       width: 40%;
+       margin-left: 65%;
+       margin-top: -16%;
+   }
+   .filtre-animaux{
+       width: 62%;
+       margin-left: 5%;
+   }
+    .filtre-economique {
+       margin-left: 5%;
+       width: 50%;
+      
+   }
+   .filtre-romantique{
+       margin-left: 5%;
+       width: 50%;
+   }
+   .filter-title{
+       font-size: 20px;
+   }
+   .filter-element-texte{
+       font-size: 18px;
+   }
+   
+   .info2 i{
+       margin-left: -44px;
+       font-size: 16px;
+       padding: 6px 11px 6px 11px;
+       margin-right: 15px;
+   }
+   .info2{
+       font-size: 17px;
+       margin-left: 62px;
+   }
+   .les-plus-populaires-test{
+       width: 450px;
+   }
+   .les-plus-populaires-test h3{
+       font-size: 23px;
+   }
+   .pop{
+       margin-left: 12px;
+       width: 375px;
+       height: 170px;
+   }
+   .pop-coeur{
+        margin-left: 12px;
+        width: 424px;
+        height: 170px;
+   }
+   .hebergement-element-content{
+       margin-right: 53px;
+       margin-left: -14px;
+   }
+   .Marseille-titre h3{
+       font-size: 22px;
+       margin-left: 10px;
+      padding-bottom: 15px;
+   }
+   .third{
+       margin-right: 6px;
+
+   }
+   .AFP a{
+       margin-top: 20px;
+   }
+   .grid-container-activity-Marseille-title{
+       font-size: 22px;
+       margin-bottom: 20px;
+   }
+   .grid-container-activity-Marseille{
+       width: 466px;
+       height: 1300px;
+   }
+   .grid-container-activity-Marseille img{
+       height: 140px;
+   }
+   .activity-Maseille-card{
+       width: 380px;
+       margin-left: -14px;
+   }
+   .activity-Marseille-card-title{
+       font-size: 18px;
+       margin-top: -10px;
+   }
+   .activity-Marseille-card-title-little{
+       font-size: 18px;
+   }
 }
