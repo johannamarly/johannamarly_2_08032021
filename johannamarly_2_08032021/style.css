@@ -16,33 +16,48 @@
    margin-left: 30px;
    margin-top: 30px;
  }
+ .hebergement :visited{
+     color: blue;
+     
+ }
   
   .hebergement { 
     font-family: 'Raleway'; 
     font-size: 13px;
+    font-weight: lighter;
     color: #0065FC;
     grid-area: hebergement;
      margin-top: -45px;
      margin-left: 100PX ;
-     text-decoration: none;
+     
     
  }
-
- .line{
-    grid-area: line;
-     border-top: solid #0065fc;
-     width: 70%;
-     border-width: 2Px;
-     margin-left: 78px;
- }
+ .hebergement :hover{
+     border-top: solid 2px #0065FC;
+     padding-top: 20px;
      
-  
-  .activites { 
+     
+ }
+ a:link { 
+    text-decoration:none; 
+} 
+
+ .activites { 
     font-family: 'Raleway';
     font-size: 13px;
     grid-area: activites;
     margin-top: -45px;
-    margin-left: 78px }
+    margin-left: 78px;
+    text-decoration: none;
+ }
+
+.activites :hover{
+    border-top:solid 2px #0065FC;
+    padding-top: 20px;
+}
+.activites :visited{
+    color: black;
+}
   
   .inscrire { 
     font-family: 'Raleway'; 
@@ -53,6 +68,14 @@
     margin-top: -45px;
     margin-left: 43px;
 
+  }
+
+  .inscrire :hover{
+      border-top: solid 2px #0065FC;
+      padding-top: 20px;
+  }
+  .inscrire :visited{
+      color: blue;
   }
 .info h3{
     font-family: 'Raleway';
@@ -437,7 +460,7 @@ span i{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 40% 43%;
-    gap: 34px 50px;
+    gap: 28px 50px;
     grid-template-areas:
       "old-port pomegue calanques garde"
       "old-port iles-frioul calanques longchamp";
@@ -447,11 +470,19 @@ span i{
     font-family: 'Raleway';
 }
   .old-port { grid-area: old-port; }
-  .pomegue { grid-area: pomegue; }
-  .iles-frioul { grid-area: iles-frioul; }
+  .pomegue { grid-area: pomegue;
+    height: 205px;   
+}
+  .iles-frioul { 
+      grid-area: iles-frioul;
+      height: 148px;
+      margin-top: 38px;
+    }
   .calanques { grid-area: calanques; }
-  .garde { grid-area: garde; }
-  .longchamp { grid-area: longchamp; }
+  .garde { 
+      grid-area: garde; }
+  .longchamp { 
+      grid-area: longchamp;}
 
 
 .grid-container-activity-Marseille-title{
@@ -643,6 +674,7 @@ img {
         margin-left: 14%;
         font-size: 20px;
         text-decoration: none;
+        border-bottom: blue;
      }
     .hebergement a{
         text-decoration: none;  
@@ -653,6 +685,7 @@ img {
         margin-left: 95px;
         font-size: 20px;
         text-decoration: none;
+        
     }
 
     .activites a {
@@ -663,7 +696,11 @@ img {
     .line { grid-area: line;
          margin-left: 0%; 
          width: 110%;
+         border-bottom: solid 3px blue;
     }
+
+    
+    
 
 
     .fas fa-search{
@@ -840,4 +877,129 @@ img {
         display: flex;
         flex-direction: column;
     }
+}
+@media all and (max-width: 375px){
+    .info h5{
+        margin-bottom: 25px;
+    }
+    .searchForm{
+        height: 65px;
+        font-size: 20px;
+    }
+    .searchFormWrapicon{
+        width: 25px;
+        
+    }
+    
+    .searchFormSearchInput{
+        width: 200px;
+        font-size: 18px;
+    }
+   .filtres{
+       display: flex;
+       flex-direction: column;
+       
+   }
+   
+   .filter-element-containeur{
+       justify-content: end;
+       height: 10%;
+   }
+   .filter-element{
+       width: 54%;
+       padding-left: 2px;
+   }
+   .filtre-famillial{
+       width: 40%;
+       margin-left: 65%;
+       margin-top: -16%;
+   }
+   .filtre-animaux{
+       width: 62%;
+       margin-left: 5%;
+   }
+    .filtre-economique {
+       margin-left: 5%;
+       width: 50%;
+      
+   }
+   .filtre-romantique{
+       margin-left: 5%;
+       width: 50%;
+   }
+   .filter-title{
+       font-size: 20px;
+   }
+   .filter-element-texte{
+       font-size: 18px;
+   }
+   
+   .info2 i{
+       margin-left: -44px;
+       font-size: 16px;
+       padding: 6px 11px 6px 11px;
+       margin-right: 15px;
+   }
+   .info2{
+       font-size: 17px;
+       margin-left: 62px;
+   }
+   .les-plus-populaires-test{
+       width: 450px;
+   }
+   .les-plus-populaires-test h3{
+       font-size: 23px;
+   }
+   .pop{
+       margin-left: 12px;
+       width: 375px;
+       height: 170px;
+   }
+   .pop-coeur{
+        margin-left: 12px;
+        width: 376px;
+        height: 170px;
+   }
+   .hebergement-element-content{
+       margin-right: 53px;
+       margin-left: -14px;
+       width: 400px;
+   }
+   .Marseille-titre h3{
+       font-size: 22px;
+       margin-left: 10px;
+      padding-bottom: 15px;
+   }
+   .third{
+       margin-right: 6px;
+
+   }
+   .AFP a{
+       margin-top: 20px;
+   }
+   .grid-container-activity-Marseille-title{
+       font-size: 22px;
+       margin-bottom: 20px;
+   }
+   .grid-container-activity-Marseille{
+       width: 466px;
+       height: 1300px;
+   }
+   .grid-container-activity-Marseille img{
+       height: 140px;
+   }
+   .activity-Maseille-card{
+       width: 380px;
+       margin-left: -14px;
+   }
+   .activity-Marseille-card-title{
+       font-size: 18px;
+       margin-top: -10px;
+   }
+   .activity-Marseille-card-title-little{
+       font-size: 18px;
+   }
+   .footer{
+       width: 450px;
+   }
 }
