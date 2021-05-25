@@ -80,7 +80,7 @@
 .info h3{
     font-family: 'Raleway';
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 28px;
     margin-left: 30px;
     margin-bottom: 0px;
@@ -257,7 +257,7 @@
 .Marseille-containeur{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: auto;
     
 }
 #hebergement_containeur{
@@ -324,7 +324,7 @@
 }
 .third :hover{
     background-color: rgb(196, 196, 235);
-    font-style:italic ;
+   
     
 }
 .third i{
@@ -448,7 +448,7 @@
 .pop :hover{
 
     background-color: rgb(196, 196, 235);
-    font-style: italic;
+    
 }
 .pop i{
 
@@ -605,12 +605,12 @@ img {
  }
 @media all and (max-width: 1024px) {
 .logo-reservia{
-    width: 160%;
+    width: auto;
 }
 .les-plus-populaires-test{
-    width: 150%;
-    margin-left: 63%;
+    width: 600px;
     margin-bottom: 10%;
+    justify-content: center;
 }
 
 .Marseille-containeur{
@@ -620,10 +620,10 @@ img {
     font-size: 30px;
 }
 #hebergement_containeur{
-    width: 105%;
+    width:1024px;
 }
 .Marseille-content-containeur{
-    width: 143%;
+    width: 1024px;
 }
 
 .third{
@@ -658,7 +658,7 @@ img {
     .logo-reservia img { 
         grid-area: logo-reservia; 
         margin-top: 9%;
-        min-width: 25%;
+        min-width: 55%;
         
     }
       
@@ -707,15 +707,15 @@ img {
         }
     
     .info h3{
-        font-size: xx-large;
+        font-size: 23px;
         }
     
     .info h5{
-        font-size: x-large;
+        font-size:18px;
         }
     
     .info2{
-        font-size: x-large;
+        font-size: 20px;
         
         }
     .info2 i{
@@ -727,7 +727,7 @@ img {
         display: flex !important;
 }
     .searchForm{
-        width: 100%;
+        width: auto;
     }
     .searchFormSubmitInput span{
         display: none;
@@ -739,23 +739,23 @@ img {
 
 
     .les-plus-populaires-test{
-        width: 130%;
+        width: auto;
         margin-left: 1%;
         border-radius: 0px 0px 0px 0px;
         
     }
     .les-plus-populaires-right-containeur{
-        width: 85%;
+        width: auto;
         
     }
     .img-pop-soleil{
-        width: 95%;
+        width: auto;
     }
     .pop{
-        width: 71%;
+        width:auto;
     }
     .pop-coeur{
-        width: 71%;
+        width: auto;
     }
     .description{
         width: 100%;
@@ -769,28 +769,30 @@ img {
         margin-left: 51px;
     }
     .Marseille-containeur{
-        width: 100%;
+        width: auto;
         flex-direction: column-reverse;
        
     }
-    
-    .hebergement_containeur{
+    .Marseille-left-containeur{
+        width: auto;
+    }
+    #hebergement_containeur{
         flex-direction: column;
-        width: 100%;
+        width: auto;
     
     }
     .Marseille-titre h3{
-        font-size: 15px;
+        font-size: 13px;
         
     }
     
     .hebergement-element-containeur{
-        width: 100%;
+        width: auto;
     }
     
     
     .Marseille-content-containeur{
-        width: 175%;
+        width: auto;
         margin-left: 1%;
         flex-direction: column;
         background-color: white;
@@ -823,7 +825,7 @@ img {
 
     .Activites_marseille {
         flex-direction: column;
-        width: 100%;
+        width: auto;
     }
 
     .grid-container-activity-Marseille {
@@ -833,8 +835,8 @@ img {
         gap: 30px 0%;
         grid-template-rows: 14% 14% 14% 14% 14% 14%;
         height:1000px;
-        width: 100%;
-        margin-left: 6%;
+        width: auto;
+       
        
         grid-template-areas:
           "old-port"
@@ -845,7 +847,7 @@ img {
           "longchamp";
           
       }
-      .old-port { grid-area: old-port; }
+      .old-port { grid-area: old-port; width: auto; }
       .pomegue { grid-area: pomegue; margin-bottom: 5%;}
       .iles-frioul { grid-area: iles-frioul;margin-top: 12%;}
       .calanques { grid-area: calanques;margin-top: 13%;
@@ -856,6 +858,7 @@ img {
 
     img{
         object-fit: cover;
+       
         
     }
     .grid-container-activity-Marseille-title{
@@ -868,7 +871,7 @@ img {
         margin-right: 1%;
         margin-top: 5%;
         padding-bottom: 2%;
-        width: 88%;
+        width: auto;
     }
     .activity-Marseille-card-title{
         margin-top: 0%;
@@ -889,7 +892,7 @@ img {
     }
     .searchForm{
         height: 65px;
-        font-size: 20px;
+        font-size: 15px;
     }
     .searchFormWrapicon{
         width: 25px;
@@ -897,8 +900,8 @@ img {
     }
     
     .searchFormSearchInput{
-        width: 200px;
-        font-size: 18px;
+        width: auto;
+        font-size: 15px;
     }
    .filtres{
        display: flex;
@@ -946,17 +949,18 @@ img {
        margin-right: 15px;
    }
    .info2{
-       font-size: 17px;
-       margin-left: 62px;
+       
+       margin-left: 14%;
    }
    .les-plus-populaires-test{
-       width: 100%;
+       width: auto;
+       margin: 0%;
    }
    .les-plus-populaires-right-containeur{
-       width: 100%;
+       width: auto;
    }
    .les-plus-populaires-test h3{
-       font-size: 20px;
+       font-size: 18px;
        margin-left: 8%;
    }
    .les-plus-populaires-test span .fas{
@@ -964,57 +968,56 @@ img {
        margin-left: 9%;
    }
    .pop i {
-       margin-top: 47%;
+       margin-top: 28px;
        font-size: 13px;
-       margin-right: 2%;
+       margin-right: 5%;
    }
    .pop{
-       width: 87%;
-       margin-left: 12px;
-       height: 170px;
+       width: auto;
+       height: 130px;
    }
    .pop-coeur i{
-       margin-top: 47%;
+       margin-top: 28px;
        font-size: 13px;
    }
    .pop-coeur{
-       width: 87%;
-        margin-left: 12px;
-        height: 170px;
+       width: auto;
+        height: 130px;
    }
    .hebergement-element-content{
        margin-right: 53px;
        margin-left: -14px;
-       width: 88%;
+       width: auto;
        
    }
    .Marseille-titre h3{
-       font-size: 22px;
-       margin-left: 10px;
-      padding-bottom: 15px;
+       font-size: 18px;
+       margin-left: -5px;
+      padding-bottom: 5px;
    }
    .third{
-       margin-right: 6px;
-       width: 89%;
+      
+       width: auto;
+       margin: 5% 0% 0% 0%;
 
    }
    .AFP a{
        margin-top: 20px;
    }
    .grid-container-activity-Marseille-title{
-       font-size: 19px;
+       font-size: 17px;
        margin-bottom: -9px;
        margin-left: 8px;
    }
    .grid-container-activity-Marseille{
-       width: 100%;
+       width: auto;
        height: 1300px;
    }
    .grid-container-activity-Marseille img{
        height: 140px;
    }
    .activity-Maseille-card{
-       width: 95%;
+       width:auto;
        height: 180px;
        margin-left: -14px;
    }
@@ -1035,6 +1038,6 @@ img {
        margin-top: 0%;
    }
    .grid-container-footer{
-       width: 100%;
+       width: auto;
    }
 }
