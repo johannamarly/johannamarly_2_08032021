@@ -968,7 +968,7 @@ img {
        margin-left: 9%;
    }
    .pop i {
-       margin-top: 28px;
+       margin-top: 45px;
        font-size: 13px;
        margin-right: 5%;
    }
@@ -994,6 +994,9 @@ img {
        font-size: 18px;
        margin-left: -5px;
       padding-bottom: 5px;
+   }
+   #hebergement_containeur{
+       padding: 0%;
    }
    .third{
       
