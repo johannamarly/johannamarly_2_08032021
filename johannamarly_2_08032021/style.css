@@ -1,4 +1,7 @@
-
+body{
+    max-width: 1500px;
+    margin: auto;
+    }
 .grid-container-navbar {
     display: grid;
     grid-template-columns: 1fr 0.2fr 0.2fr 0.2fr;
